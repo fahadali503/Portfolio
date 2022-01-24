@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Layout } from '../components/layout'
+import { AboutSection } from '../src/page-components/aboutSection/AboutSection'
+import { HomePageCarousel } from '../src/page-components/homepage/Carousel'
+import { ServiceSection } from '../src/page-components/servicesSection/ServiceSection'
 
 
 const Home: NextPage = () => {
@@ -12,8 +15,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        Hello World
+      <div className='h-auto w-full block'>
+        <HomePageCarousel />
+      </div>
+      <div className='mt-20 px-32'>
+        <AboutSection />
+      </div>
+      <div className='my-20 px-32'>
+        <ServiceSection />
       </div>
     </Layout>
   )

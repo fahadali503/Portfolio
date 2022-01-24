@@ -9,8 +9,11 @@ module.exports = {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
-      Poppins: ['Poppins', "sans-serif"]
+      Poppins: ['Poppins', "sans-serif"],
+      DancingScript: ['Dancing Script', "cursive"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 }
