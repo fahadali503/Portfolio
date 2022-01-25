@@ -8,7 +8,7 @@ interface IProps {
 }
 
 export const ServiceCard = ({ icon, text, className }: IProps) => {
-    return <div className={`${className} w-full h-full group bg-[#111] transition ease-in hover:bg-[#ffbd39] py-10`} >
+    return <div className={`${className} cursor-pointer w-full h-full group bg-[#111] transition ease-in hover:bg-[#ffbd39] py-10`} >
         <div className="flex flex-col  justify-center text-center items-center">
             <div>
                 {icon}

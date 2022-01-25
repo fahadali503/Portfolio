@@ -12,7 +12,7 @@ export const ServiceSection = () => {
         </div>
         {/* Services Grid */}
         <div className='mt-10'>
-            <div className='grid grid-cols-2 gap-28'>
+            <div className='grid grid-cols-2 gap-4'>
                 {/* Web Design */}
                 <ServiceCard
                     icon={<FaBrush className="text-center group-hover:text-black text-6xl  leading-tight font-medium mb-7" />}

@@ -1,9 +1,13 @@
+import moment from 'moment'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Layout } from '../components/layout'
 import { AboutSection } from '../src/page-components/aboutSection/AboutSection'
+import { AvailableSection } from '../src/page-components/availableSection/AvailableSection'
+import { ContactSection } from '../src/page-components/contactSection/ContactSection'
 import { HomePageCarousel } from '../src/page-components/homepage/Carousel'
 import { ServiceSection } from '../src/page-components/servicesSection/ServiceSection'
+import { SkillSection } from '../src/page-components/skillsSection/SkillSection'
 
 
 const Home: NextPage = () => {
@@ -23,6 +27,21 @@ const Home: NextPage = () => {
       </div>
       <div className='my-20 px-32'>
         <ServiceSection />
+      </div>
+
+      <div className='my-20 px-32'>
+        <SkillSection />
+      </div>
+
+      <div className='my-20 h-96 px-32'>
+        <AvailableSection />
+      </div>
+
+      <div className='my-20 h-auto px-32'>
+        <ContactSection />
+      </div>
+      <div className='mt-20 flex items-end justify-center h-28'>
+        <div>Fahad Ali &copy; <span className='font-bold text-yellow-300'>Jan 25th 2022</span> - <span className='font-bold text-yellow-300'>{moment().format('MMM DDD, YYYY')}</span></div>
       </div>
     </Layout>
   )
