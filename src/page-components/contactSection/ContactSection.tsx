@@ -4,7 +4,9 @@ import { LightHeading } from '../../../components/headings/LightHeading';
 import { ContactForm } from './ContactForm';
 import { ContactInfo } from './ContactInfo';
 
+
 export const ContactSection = () => {
+
     return <div>
         <div className='relative text-center'>
             <LightHeading text='Contact' className='tracking-wider' />
@@ -16,7 +18,7 @@ export const ContactSection = () => {
         <div>
             <ContactInfo />
         </div>
-        <div>
+        <div className='mt-20'>
             <ContactForm />
         </div>
     </div>;

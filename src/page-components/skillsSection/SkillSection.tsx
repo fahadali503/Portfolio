@@ -30,9 +30,9 @@ export const SkillSection = () => {
             <Heading1 text='My Skills' className='absolute text-center w-full top-0 font-bold text-5xl' />
         </div>
         <div className='grid my-16  gap-10 lg:grid-cols-2 md:grid-cols-1'>
-            <div className='justify-self-end pt-28'>
+            <div >
                 <div className="mb-4">
-                    <img src="/image1.png" className="max-w-full h-96 mx-auto rounded-full" alt="" />
+                    <img src="/img2.jpg" className="max-w-full h-auto  mx-auto  " alt="" />
                 </div>
                 <div className='text-center'>
                     <Heading1 text="Who's this guy?" className='font-bold text-3xl tracking-wider italic'

@@ -4,9 +4,9 @@ import loading from '../public/loading.json';
 
 
 export const Loader = () => {
-    return <div className='h-screen w-screen'>
+    return <div className='h-screen bg-white w-screen'>
         <div
-            className=' flex justify-center items-center h-full'>
+            className=' flex w-full justify-center items-center h-full'>
             <Lottie loop animationData={loading}
                 speed={0.5}
                 play

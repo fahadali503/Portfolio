@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useEffect, useState } from 'react'
 import { Loader } from '../components/Loader';
-
+import { Toaster } from 'react-hot-toast';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    window.onload = () => setLoading(false);
+    setLoading(false);
   }, [])
 
   return <>
@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         loading ?
           <Loader />
           : <div>
+            <Toaster />
             <Component {...pageProps} />
           </div>
       }

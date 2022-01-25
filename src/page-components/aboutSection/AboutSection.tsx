@@ -8,7 +8,7 @@ export const AboutSection = () => {
     return <div className='pt-10'>
         <div className='grid justify-items-center lg:grid-cols-2  md:grid-cols-1'>
             <div className='lg:block md:hidden sm:hidden '>
-                <img src="/img1.png" className='grayscale lg:block md:hidden sm:hidden ' alt="" />
+                <img src="/img1.jpg" className='grayscale lg:block md:hidden sm:hidden ' alt="" />
             </div>
             <div className='lg:justify-self-start md:justify-self-center sm:justify-self-center'>
                 {/* Heading */}

@@ -11,7 +11,7 @@ interface IProps {
     h3?: string;
     buttonText?: string;
     buttonHandleClick?: () => void;
-    imageSrc: "/img1.png" | "/img2.png";
+    imageSrc: "/img1.jpg" | "/img2.jpg";
     isGrayFilter?: boolean;
     children?: React.ReactNode;
 }
