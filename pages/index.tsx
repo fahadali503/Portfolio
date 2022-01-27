@@ -27,25 +27,25 @@ const Home: NextPage = () => {
         <link rel="icon" href="/fav.ico" />
       </Head>
 
-      <div id='home' className='h-auto w-full block'>
+      <div id='home' className='h-auto w-full'>
         <HomePageCarousel />
       </div>
-      <div id='about' className='mt-20 px-32'>
+      <div id='about' className='mt-20'>
         <AboutSection />
       </div>
-      <div id='service' className='my-20 px-32'>
+      <div id='service' className='my-20 '>
         <ServiceSection />
       </div>
 
-      <div id='skill' className='my-20 px-32'>
+      <div id='skill' className='my-20'>
         <SkillSection />
       </div>
 
-      <div id='available' className='my-20 h-96 px-32'>
+      <div id='available' className='my-20 h-96'>
         <AvailableSection />
       </div>
 
-      <div id='contact' className='my-20 h-auto px-32'>
+      <div id='contact' className='my-20 h-auto'>
         <ContactSection />
       </div>
       <div className='mt-20 flex items-end justify-center h-28'>

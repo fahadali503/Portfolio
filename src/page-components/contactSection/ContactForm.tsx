@@ -2,7 +2,6 @@ import React from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import toast from 'react-hot-toast';
-import axios from 'axios';
 import { ContactUsMutation } from '../../utils/mutation/contactUs.mutation';
 ;
 
@@ -36,7 +35,7 @@ export const ContactForm = () => {
 
 
     return <div className='mt-16'>
-        <div className='xl:w-1/2 lg:w-1/2 md:w-8/12 mx-auto'>
+        <div className='lg:w-1/2 md:w-8/12 lg:mx-auto md:mx-auto sm:w-8/12 sm:mx-auto xs:mx-auto xss:w-full'>
             <div className="block shadow-yellow-500 p-10 border-t border-yellow-500 rounded-lg shadow-lg max-w-md">
                 <Formik validationSchema={ContactFormSchema} initialValues={{ email: "", message: "", name: "" }} onSubmit={values => onHandleSubmit(values)}>
 

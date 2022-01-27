@@ -8,7 +8,7 @@ interface IProps {
 }
 
 export const Heading1 = ({ text, className, color, children }: IProps) => {
-    return <h1 className={className} style={{ color }}>
+    return <h1 className={`${className}`} style={{ color }}>
         {text}
         {children}
     </h1>;

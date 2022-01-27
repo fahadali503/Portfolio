@@ -7,14 +7,14 @@ import { InfoTable } from './InfoTable';
 export const AboutSection = () => {
     return <div className='pt-10'>
         <div className='grid justify-items-center lg:grid-cols-2  md:grid-cols-1'>
-            <div className='lg:block md:hidden sm:hidden '>
+            <div className='lg:block md:hidden xs:hidden xss:hidden sm:hidden '>
                 <img src="/img1.jpg" className='grayscale lg:block md:hidden sm:hidden ' alt="" />
             </div>
-            <div className='lg:justify-self-start md:justify-self-center sm:justify-self-center'>
+            <div className='lg:justify-self-start md:justify-self-center sm:justify-self-center xs:justify-self-center xss:justify-self-center'>
                 {/* Heading */}
                 <div className='relative'>
-                    <LightHeading text='About' className='tracking-wider' />
-                    <Heading1 text='About Me' className='absolute top-0 font-bold text-5xl' />
+                    <LightHeading text='About' className='tracking-wider ' />
+                    <Heading1 text='About Me' className='absolute top-0 font-bold text-5xl ' />
                 </div>
 
                 {/* Information */}

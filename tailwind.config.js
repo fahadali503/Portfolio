@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +14,11 @@ module.exports = {
       Poppins: ['Poppins', "sans-serif"],
       DancingScript: ['Dancing Script', "cursive"],
       Rouge: ['Rouge Script', 'cursive']
+    },
+    screens: {
+      'xs': '400px',
+      'xss': '320px',
+      ...defaultTheme.screens,
     },
   },
   plugins: [

@@ -12,8 +12,8 @@ export const AvailableSection = () => {
         }}>
             <div className='flex flex-col justify-center lg:text-4xl md:text-3xl sm:text-xl font-semibold items-center h-full text-center'>
                 <h1 className=''>{"I'm "} <SpanText text='Available ' color={COLORS.primary} /> for freelancing</h1>
-                <p className='lg:text-lg md:text-base sm:text-sm text-black font-medium'>Have a question or want to work together?</p>
-                <RoundedButton onClick={() => router.push("/#contact")} className='lg:w-1/2 md:w-1/3 sm:w-1/4 mx-auto lg:text-lg md:text-base sm:text-sm mt-5' text='Hire Me!' />
+                <p className='lg:text-lg md:text-base sm:text-xs text-black font-medium'>Have a question or want to work together?</p>
+                <RoundedButton onClick={() => router.push("/#contact")} className='lg:w-1/2 md:w-1/3 xs:w-1/4 mx-auto lg:text-lg md:text-base xs:text-sm mt-5' text='Hire Me!' />
             </div>
         </div>
     </div>;

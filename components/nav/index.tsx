@@ -13,38 +13,38 @@ export const SideNavbar = () => {
 
                 <button
                     aria-label="Close"
-                    className="absolute top-3 right-3 text-5xl text-white cursor-pointer"
+                    className="absolute top-3 right-3 text-6xl text-white cursor-pointer"
                     onClick={onClickHandler}
                 >
                     &times;
                 </button>
                 <MenuContainer>
-                    <div className='m-4 hover:text-yellow-500 lg:text-4xl md:text-4xl sm:text-4xl font-bold'>
+                    <div className='m-4 hover:text-yellow-500 lg:text-4xl md:text-4xl sm:text-4xl xs:text-4xl xss:text-4xl  font-bold'>
                         <Link href={'/#home'}><a onClick={onClickHandler}>Home</a></Link>
                     </div>
-                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl hover:text-yellow-500 font-bold'>
+                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl xs:text-4xl xss:text-4xl   hover:text-yellow-500 font-bold'>
                         <Link href={'/#about'}><a onClick={onClickHandler}>About</a></Link>
                     </div>
-                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl hover:text-yellow-500 font-bold'>
+                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl xs:text-4xl xss:text-4xl  hover:text-yellow-500 font-bold'>
                         <Link href={'/#service'}><a onClick={onClickHandler}>Services</a></Link>
                     </div>
-                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl hover:text-yellow-500 font-bold'>
+                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl xs:text-4xl xss:text-4xl  hover:text-yellow-500 font-bold'>
                         <Link href={'/#skill'}><a onClick={onClickHandler}>Skills</a></Link>
                     </div>
-                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl hover:text-yellow-500 font-bold'>
+                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl xs:text-4xl xss:text-4xl  hover:text-yellow-500 font-bold'>
                         <Link href={'/#available'}><a onClick={onClickHandler}>Available</a></Link>
                     </div>
-                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl hover:text-yellow-500 font-bold'>
+                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl xs:text-4xl xss:text-4xl  hover:text-yellow-500 font-bold'>
                         <Link href={'/#contact'}><a onClick={onClickHandler}>Contact</a></Link>
                     </div>
-                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl hover:text-yellow-500 font-bold'>
+                    <div className='my-4 lg:text-4xl md:text-4xl sm:text-4xl xs:text-4xl xss:text-4xl  hover:text-yellow-500 font-bold'>
                         <Link href={'/blog'}><a onClick={onClickHandler}>Blog</a></Link>
                     </div>
                 </MenuContainer>
             </Menu>
         </>
 
-        {!isOpen && <span onClick={() => setIsOpen(true)} className='top-5 md:text-5xl lg:text-6xl animate-pulse cursor-pointer fixed right-4'  >&#9776;</span>}
+        {!isOpen && <span onClick={() => setIsOpen(true)} className='top-5 md:text-6xl lg:text-6xl animate-pulse cursor-pointer fixed right-4 sm:text-6xl xs:text-6xl xss:text-6xl'  >&#9776;</span>}
     </div>
 };
 
