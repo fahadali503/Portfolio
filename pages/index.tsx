@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Full-Stack Developer" />
         <meta name="description" content="Fahad Ali - Full Stack Web Developer" />
         <meta name="keywords" content="javascript, reactjs, nextjs, fullstack web developer, mongodb, expressjs, nodejs, express" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fav.ico" />
       </Head>
 
       <div id='home' className='h-auto w-full block'>
