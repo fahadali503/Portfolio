@@ -15,7 +15,15 @@ const Home: NextPage = () => {
     <Layout >
       <Head>
         <title>Fahad Ali - Full Stack Web Developer</title>
+        <meta name="description" content="Fahad Ali" />
+        <meta name="description" content="Best Web Developer" />
+        <meta name="description" content="React js Developer" />
+        <meta name="description" content="Next js Developer" />
+        <meta name="description" content="Javascript Developer" />
+        <meta name="description" content="Full Stack Developer" />
+        <meta name="description" content="Full-Stack Developer" />
         <meta name="description" content="Fahad Ali - Full Stack Web Developer" />
+        <meta name="keywords" content="javascript, reactjs, nextjs, fullstack web developer, mongodb, expressjs, nodejs, express" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
