@@ -11,6 +11,7 @@ module.exports = {
       serif: ['Merriweather', 'serif'],
       Poppins: ['Poppins', "sans-serif"],
       DancingScript: ['Dancing Script', "cursive"],
+      Rouge: ['Rouge Script', 'cursive']
     },
   },
   plugins: [

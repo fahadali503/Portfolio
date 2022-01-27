@@ -3,6 +3,7 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import { ContactUsMutation } from '../../utils/mutation/contactUs.mutation';
 ;
 
 
@@ -26,7 +27,7 @@ export const ContactForm = () => {
         name: string;
     }) => {
         try {
-            const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_API}`, { data: values });
+            const res = await ContactUsMutation(values)
             toast.success("Message sent!")
         } catch (error) {
             toast.error("Something went wrong, try again later.")
