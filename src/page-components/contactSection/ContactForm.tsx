@@ -35,12 +35,12 @@ export const ContactForm = () => {
 
 
     return <div className='mt-16'>
-        <div className='lg:w-1/2 md:w-8/12 lg:mx-auto md:mx-auto sm:w-8/12 sm:mx-auto xs:mx-auto xss:w-full'>
-            <div className="block shadow-yellow-500 p-10 border-t border-yellow-500 rounded-lg shadow-lg max-w-md">
+        <div className='lg:w-1/2 md:w-8/12 px-10 lg:mx-auto md:mx-auto sm:w-8/12 sm:mx-auto xs:mx-auto xss:w-full'>
+            <div className="w-full shadow-yellow-500 p-10 border-t border-yellow-500 rounded-lg shadow-lg max-w-md">
                 <Formik validationSchema={ContactFormSchema} initialValues={{ email: "", message: "", name: "" }} onSubmit={values => onHandleSubmit(values)}>
 
                     {({ handleChange, handleSubmit, errors, handleBlur, touched }) => (
-                        <form onSubmit={handleSubmit} >
+                        <form className='w-full' onSubmit={handleSubmit} >
                             <div className="form-group mb-6">
                                 <input type="text" className="form-control block                 w-full                 px-3                 py-1.5                 text-base                 font-normal                 text-gray-700                 bg-white bg-clip-padding                 border border-solid border-gray-300                 rounded                 transition                 ease-in-out                 m-0 focus:text-gray-700 focus:bg-white focus:border-yellow-600 focus:outline-none" name="name"
                                     onChange={handleChange}
