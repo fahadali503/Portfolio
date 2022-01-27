@@ -18,7 +18,7 @@ interface IProps {
 
 export const Slide = ({ isGrayFilter = false, buttonText = "Hire Me", h1, h2, h2Span, h3, imageSrc, buttonHandleClick, children }: IProps) => {
     return <div className='grid items-center lg:grid-cols-2 xs:text-center md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 xss:grid-cols-1'>
-        <div className='lg:row-start-1 md:row-start-2 sm:row-start-2 xs:row-start-2 xss:row-start-2 lg:text-left  md:text-center  sm:text-center xs:text-center xss:text-center md:mt-5 '>
+        <div className='lg:row-start-1 md:row-start-2 sm:row-start-2 xs:row-start-2 xss:row-start-2 lg:text-left  md:text-center   sm:text-center xs:text-center xss:text-center md:mt-5 '>
             <div>
                 <Heading1 text={h1} className='uppercase md:mt-5 sm:mt-5 xs:mt-5 xss:mt-5 font-bold' color='#ffbd39' />
             </div>
@@ -34,7 +34,7 @@ export const Slide = ({ isGrayFilter = false, buttonText = "Hire Me", h1, h2, h2
                 <RoundedButton text={buttonText} onClick={buttonHandleClick} />
             </div>
         </div>
-        <div className='h-full lg:w-full xs:justify-self-center sm:justify-self-center  md:justify-self-center '>
+        <div className='h-full lg:w-full xs:justify-self-start sm:justify-self-start  md:justify-self-center '>
             <img src={imageSrc} className={`${isGrayFilter ? "grayscale" : ""}`} alt="Fahad Ali" />
         </div>
     </div>;

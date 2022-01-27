@@ -16,7 +16,7 @@ export const HomePageCarousel = () => {
 
     return <div className='lg:px-32  w-full xs:ml-32 xss:ml-32 sm:ml-0 '>
         <Slider {...settings} arrows={false} autoplay autoplaySpeed={3000}>
-            <Slide h1='Hello!' h2="I'm " h2Span='Web Developer ' imageSrc='/img1.jpg' isGrayFilter
+            <Slide h1='Hello!' h2="I'm a " h2Span='Web Developer, ' imageSrc='/img1.jpg' isGrayFilter
                 buttonHandleClick={() => router.push("/#contact")}
             >
                 <SpanText className='lg:text-5xl md:text-3xl sm:text-2xl xs:text-xl' text='Based in ' color={COLORS.white} />
